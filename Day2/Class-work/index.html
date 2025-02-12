@@ -1,11 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Two Divisions with Flexbox</title>
+    <style>
+        .container {
+            display: flex;
+        }
+        .left {
+            flex: 1;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+        .right {
+            flex: 1;
+            background-color: #e2e2e2;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="left">
+            <p>This is the left part.</p>
+        </div>
+        <div class="right">
+            <p>This is the right part.</p>
+        </div>
+    </div>
 </body>
 </html>
