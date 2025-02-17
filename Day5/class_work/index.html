@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            background-color: aqua;
+        }
+        #btech4 {
+            background-color: red;
+        }
+        .para1 {
+            background-color: black;
+        }
+        .para2 {
+            background-color: yellow;
+        }
+        div p {
+            background-color: blue;
+        }
+        .parent>p {
+            background-color: green;
+        }
+        body {
+            text-align: center;
+            margin: 0%;
+        }
+    </style>
+</head>
+<body>
+    <div id="btech1">
+        <p>This is paragraph 1</p>
+        <div>
+            <div>
+                <div>
+                    <p class="para2">HII</p>
+                </div>
+                <p>nested</p>
+                <p>hello</p>
+            </div>
+        </div>
+    </div>
+    <div id="btech2">
+        <p>This is paragraph 2</p>
+    </div>
+    <div id="btech3">
+        <p>This is paragraph 3</p>
+    </div>
+    <div id="btech4">
+        <p>This is paragraph 4</p>
+    </div>
+    <div id="btech5">
+        <p>This is paragraph 5</p>
+    </div>
+
+    <div class="parent">
+        <p>paragraph</p>
+        <p>paragraph</p>
+        <p>paragraph</p>
+        <div>
+            <p>paragraph</p>
+            <p>paragraph</p>
+        </div>
+    </div>
+</body>
+</html>
