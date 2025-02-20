@@ -1,0 +1,68 @@
+body {
+    background-color: blanchedalmond;
+}
+h1 {
+    text-align: center;
+    background-color: rgba(132, 220, 213, 0.548);
+}
+#parent {
+    height: 500px;
+    width: 350px;
+    border: 2px solid black;
+    background-color: rgb(20, 21, 21);
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: auto;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#parent>div {
+    border: 1px solid black;
+    background-color: rgb(123, 139, 139);
+    color: white;
+    height:50px;
+    width: 50px;
+    margin: auto;
+    border-radius: 20px;
+    text-align: center;
+    font-size: x-large;
+    justify-content:space-evenly;
+
+}
+input{
+    background-color: rgb(70, 68, 66);
+    height: 40px;
+    width: 80%;
+    display: flex;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+#parent>input:nth-child(1) {
+    grid-area:1/1/1/5 ;
+}
+#parent>div:nth-child(21) {
+    background-color: green;
+}
+#parent>div:nth-child(4) {
+    background-color: orange;
+}
+#parent>div:nth-child(5) {
+    background-color: orange;
+}
+#parent>div:nth-child(9) {
+    background-color: orange;
+}
+#parent>div:nth-child(13) {
+    background-color: orange;
+}
+#parent>div:nth-child(17) {
+    background-color: orange;
+}
+#parent>div:nth-child(18) {
+    background-color: orange;
+}
+#parent>div:nth-child(3) {
+    background-color: skyblue;
+}

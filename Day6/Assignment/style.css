@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(143, 221, 241);
+}
+#header {
+    display: flex;
+    margin-top: 0;
+    margin: -7px;
+    padding-left: 40px;
+    background-color: white;
+    background-position: fixed;
+}
+a {
+    margin-left: 100px;
+    margin-top: 15px;
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    background-color: #d2b8b8;
+    transition: background-color 0.3s ease , transform 0.3s ease;
+    transform: scale(1.05);
+}

@@ -1,0 +1,39 @@
+/* Hi everyone,
+
+Today's assignment is:
+
+1. You have to create laptop keyboard with side number keys. When you hover on keys it should show some interaction using hover property.
+2. Create one calculator.
+
+Bonus: Use animation while hovering on keys of calculator and keyboard.
+
+You have to use grid, flex, pseudo class, pseudo elements.
+
+Only HTML and CSS.
+
+Thank You */
+
+#parent {
+    width: 400px;
+    height: 500px;
+    background-color: rgba(207, 192, 192, 0.797);
+    border: 1px dashed red;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 8px;
+    padding: 30px 10px 30px 40px ;
+}
+#parent>div {
+    height: 50px;
+    width: 100px;
+    border: 1px solid black;
+    background-color: bisque;
+    text-align: center;
+    font-size: xx-large;
+}
+#parent>div:hover {
+    background-color: rgb(203, 164, 115);
+}
+
+
