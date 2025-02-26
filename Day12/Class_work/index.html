@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User information</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="parent">
+        <h1>Hi There....</h1>
+        <form action="submit" id="userForm" >
+            <input type="text" id="name" placeholder="full name" required>
+            <input type="email" placeholder="email" id="email" required>
+            <input type="number" placeholder="number" id="number" required>
+            <input type="password" placeholder="password" id="password" required>
+            <input type="password" placeholder="confirm password" id="confirm-password" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div id="userdata">
+        <table>
+            <thead>
+                <!-- <th> -->
+                    <td>Full Name</td>
+                    <td>Email</td>
+                    <td>Number</td>
+                    <td>Password</td>
+                    <td>confirm-password</td>
+                <!-- </th> -->
+            </thead>
+            <tbody id="tbody">
+            
+            </tbody>
+        </table>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

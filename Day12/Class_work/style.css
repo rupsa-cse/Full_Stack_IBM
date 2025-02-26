@@ -1,0 +1,49 @@
+body {
+    background-image: url("https://storage.needpix.com/rsynced_images/background-2203989_1280.jpg");
+    
+}
+#parent {
+    width: 30%;
+    height: 500px;
+    margin: auto;
+    border: 1px solid black;
+    background-color: antiquewhite;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-radius: 5px;
+    
+}
+input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+input:focus {
+    background-color: bisque;
+}
+#parent>form>button {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    background-color: rgb(23,185,23);
+}
+#parent>form>button:hover {
+    cursor: pointer;
+    background-color: green;
+    color: white;
+}
+table {
+    /* border: 2px solid black; */
+    border-collapse: collapse;
+    border: 2px solid rgb(204, 207, 23);
+    /* background-color: bisque; */
+    color:black;
+    margin: auto;
+    width: 80%;
+    margin-top: 50px;
+    padding: 5px;
+}
+td {
+    border: 1px solid rgb(169, 185, 26);
+    padding: 9px 11px;
+}
