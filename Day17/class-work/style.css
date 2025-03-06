@@ -1,0 +1,119 @@
+body {
+    background-color: black; 
+    color: white;
+}
+
+header {
+    background-color: black; 
+    display: flex;
+} 
+header>img{
+    margin-left: 20px;
+}
+ 
+header>div {
+    /* background-color: #000000f2; */
+    display: flex;
+    margin-top: 10px;
+}
+header>div>input{
+    background-color: #4a464654;
+    margin-left: 200px;
+    /* margin-top: 10px; */
+    margin-bottom: 9px;
+    height: 30px;
+    width: 550px;
+    border-radius: 30px;
+    border: none;
+}
+header>div>img{
+    margin-left: 30px;
+    border-radius: 40px;
+    margin-top: -2px;
+}
+header>#div2{
+    margin-left: 250px;
+}
+header>#div2>img{
+    margin-left: 20px;
+}
+#content1{
+    margin-top: -50px;
+}
+#content1>div{
+    border: 1px solid #4a464600;
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    display: block;
+    gap: 5px;
+    display: flex;
+}
+#content1>div>p{
+    margin-top: 5px;
+    margin-left: 10px;
+}
+#content1>div:hover{
+    background-color: #4a464654;
+}
+#line{
+    border: 1px solid #4a464654;
+    height: 0%;
+    width: 200px;
+    margin: 5px;
+}
+#content2>div{
+    border: 1px solid #4a464600;
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    display: block;
+    gap: 5px;
+    display: flex;
+}
+#content2>div>p{
+    margin-top: 5px;
+    margin-left: 10px;
+}
+#content2>div:hover{
+    background-color: #4a464654;
+}
+#content3{
+    margin-top: -10px;
+    justify-content: space-between;
+    margin-left: 250px;
+}
+#content3>ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+    display: flex;
+    justify-content: space-around; /* Make the list items display in a row */
+}
+#content3>ul>li {
+    /* border: 1px solid #4a464654; */
+    background-color: #4a464654;
+    height: 25px;
+    border-radius: 10px;
+    width: 75px;
+    text-align: center;
+    padding-top:8px ;
+    justify-content: space-around;
+}
+#content3>ul>li:hover{
+    background-color: #2e2c2ce6;
+}
+
+#parent{
+    display: flex;
+}
+
+#video-data{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  
+}
+
+#video-data>div{
+    width: 400px;
+    border: 1px solid gray;
+}

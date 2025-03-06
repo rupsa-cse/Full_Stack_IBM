@@ -41,7 +41,7 @@ let arr=[11,2,3,4,5,6,7,18,9,10,1,12,13,14,15,16]
 // },0)
 // console.log(output)
 
-// let ans=arr.sort((a,b)=>b-a)
+// let ans=arr.sort((a,b)=>b-a) //for number sorting
 // let ans2=arr.sort((a,b)=>{ return a-b})
 
 // console.log(ans)
@@ -55,13 +55,41 @@ let data =[
     {name:"earphone",price:1900,ratings:4.5}
 ]
 
-let ans=data.sort((a,b)=>{
-    const nameA=a.name
-    const nameB=b.name
-    if(nameA<nameB) {
-        return -1
+//for string sorting
+// let ans=data.sort((a,b)=>{
+//     if(a.name<b.name) {
+//         return -1
+//     }
+//     if(a.name>b.name) {
+//         return 1
+//     }
+//     return 0
+// })
+
+data.sort((a,b) => a.name.localeCompare(b.name))
+
+console.log(data)
+
+function selectionSort(arr) {
+    for (let i = 0; i < arr.length; i++) {
+      let minIndex = i;
+  
+      for (let j = i + 1; j < arr.length; j++) {
+        if (arr[j] < arr[minIndex]) {
+          minIndex = j;
+        }
+      }
+  
+      if (minIndex !== i) {
+        [arr[i], arr[minIndex]] = [arr[minIndex], arr[i]];
+      }
     }
-})
-
-console.log(ans)
-
+  
+    return arr;
+  }
+  
+  // Example usage:
+  let numbers = [4, 2, 8, 1, 5];
+  let sortedNumbers = selectionSort(numbers);
+  console.log(sortedNumbers); // Output: [1, 2, 4, 5, 8]
+  
