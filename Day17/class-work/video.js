@@ -3,7 +3,7 @@ let videoContainer = document.getElementById("video");
 let data = JSON.parse(localStorage.getItem("videoData"));
 let videoID = data.id.videoId;
 
-async function showData() {
+async function showData(videoID) {
   let box = document.createElement("div");
 
   let iframe = document.createElement("iframe");
@@ -14,11 +14,12 @@ async function showData() {
   iframe.setAttribute("allowfullscreen", true);
 
   let title = document.createElement("p");
-  title.innerText = snippet.title;
+  title.innerText = data.snippet.title;
 
   let channel_title = document.createElement("p");
-  channel_title.innerText = snippet.channelTitle;
+  channel_title.innerText = data.snippet.channelTitle;
 
-  box.append(iframe);
+  box.append(iframe,title, channel_title);
   videoContainer.append(box);
 }
+showData(videoID)

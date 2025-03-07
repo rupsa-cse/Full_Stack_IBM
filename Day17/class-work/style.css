@@ -29,7 +29,7 @@ header>div>input{
 header>div>img{
     margin-left: 30px;
     border-radius: 40px;
-    margin-top: -2px;
+    margin-top: 20px;
 }
 header>#div2{
     margin-left: 250px;
@@ -45,7 +45,7 @@ header>#div2>img{
     border-radius: 10px;
     width: 200px;
     height: 30px;
-    display: block;
+    /* display: block; */
     gap: 5px;
     display: flex;
 }
@@ -96,6 +96,7 @@ header>#div2>img{
     border-radius: 10px;
     width: 75px;
     text-align: center;
+    align-items: center;
     padding-top:8px ;
     justify-content: space-around;
 }
@@ -110,10 +111,14 @@ header>#div2>img{
 #video-data{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-  
+    gap: 40px;
+    /* margin: 10px; */
+    border-radius: 20px;
+    
 }
-
 #video-data>div{
-    width: 400px;
+    /* width: 6%; */
     border: 1px solid gray;
+    height: 250px;
+    width: 400px;
 }
